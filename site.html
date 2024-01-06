@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="pai" style="display: flex; border-bottom: 1px solid black;">
+    <form onsubmit="onSubmit()">
+      <div style="display: flex; justify-content: center;font-size: 18px;">
+        <div style="width: 60%;">
+          <p>Seu nome</p>
+          <input id="nome" maxlength="35" minlength="20" type="text"
+            style="width: 100%; height: 32px; border-radius: 5px; border-color: rgb(70, 150, 150);"
+            placeholder="Digite seu Nome Completo" />
+        </div>
+        <div style=" margin-left: 25px; width: 40%;">
+          <p>Telefone</p>
+          <input id="telefone" maxlength="8" type="number"
+            style="width: 100%; height: 32px; border-radius: 5px; border-color:  rgb(70, 150, 150);"
+            placeholder="Digite seu Telefone" />
+        </div>
+      </div>
+
+      <div style="font-size: 18px;">
+        <p>E-mail</p>
+        <input id="email" type="email"
+          style="width: 100%; height: 32px;border-radius: 5px;border-color:  rgb(70, 150, 150);"
+          placeholder="Digite Seu E-mail para Contato" />
+      </div>
+
+      <div style="font-size: 18px;">
+        <p>Portfólio (Ainda não Possuo)</p>
+        <input id="portifolio" type="text"
+          style="width: 100%; height: 32px;border-radius: 5px; border-color:  rgb(70, 150, 150);"
+          placeholder="Informe-Nos seu Dominio " />
+      </div>
+
+      <div class="endereco" style="font-size: 18px;">
+        <p>Endereço</p>
+        <input id="endereco" type="text"
+          style="width: 100%; height: 32px;border-radius: 5px; border-color:  rgb(70, 150, 150);"
+          placeholder="Digite seu Endereço" />
+      </div>
+      <div class="endereco" style="font-size: 18px;">
+        <p>Sobre Você</p>
+        <textarea name="" id="sobre" cols="30" rows="7" maxlength="250" style="resize: none; width: 100%;"></textarea>
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 10px; margin-bottom: 10px;">
+        <button type="submit" id="button" class="button">ENVIAR</button>
+      </div>
+    </form>
+
+  </div>
+
+  <div id=" pai2" style="display: flex;width: 50%">
+    <div id="esquerda" style="width: 50%;">
+      <div style="margin-left: 54px; width: 250px;">
+        <h1 style="display: flex;font-size: 25px;" id="nome2">SEU NOME</h1>
+      </div>
+      <div style="display: flex; margin-left: 25px;">
+        <label class="picture" id="picture" for="picture_input" tabindex="0" style="border: 2px dashed yellow;">
+          <span class="fotinha" id="fotinha">
+
+          </span>
+        </label>
+        <input type="file" accept="image/*" class="picture_input" id="picture_input" />
+      </div>
+
+      <div style="margin-left: 54px; width: 250px;">
+        <h1 style="display: flex; border-bottom: 1px solid black; font-size: 24px;">CONTATOS</h1>
+      </div>
+      <div id="TelefoneRES" style="font-size: 21px; display: flex;margin-left: 70px; height: 45px;">
+        <ion-icon name="call-outline" style="margin-top: 22px; margin-right: 10px;"></ion-icon>
+        <p id="telefone2">Telefone</p>
+      </div>
+      <div id="emailRES" style="font-size: 21px; display: flex;margin-left: 70px; height: 45px;">
+        <ion-icon name="mail-outline" style="margin-top: 22px; margin-right: 10px;"></ion-icon>
+        <p id="email2">Email</p>
+      </div>
+      <div id="dominioRES" style="font-size: 21px; display: flex;margin-left: 70px; height: 45px;">
+        <ion-icon name="earth-outline" style="margin-top: 22px; margin-right: 10px;"></ion-icon>
+        <p id="portifolio2">Portifolio (Ainda não Possuo)</p>
+      </div>
+      <div id="enderecoRES" style="font-size: 21px; display: flex;margin-left: 70px; height: 45px;">
+        <ion-icon name="location-outline" style="margin-top: 22px; margin-right: 10px;"></ion-icon>
+        <p id="endereco2">Endereço</p>
+      </div>
+      <div style="margin-left: 54px; width: 250px;">
+        <h1 style="display: flex; border-bottom: 1px solid black; font-size: 24px;">COMPETÊNCIAS</h1>
+      </div>
+      <div id="competenciasContainer" style="display: flex; flex-direction: row; font-size: 19px; ">
+        <ul>
+          <li style="padding: 8px;">Entrego com Pontualidade</li>
+          <li style="padding: 8px;">Flexibilidade e capacidade de se adaptar a mudanças</li>
+          <li style="padding: 8px;">Sou muito Proativo</li>
+          <li style="padding: 8px;">Possuo capacidade de trabalhar remotamente</li>
+        </ul>
+      </div>
+      <div style="margin-left: 54px; width: 250px;">
+        <h1 style="display: flex; border-bottom: 1px solid black; font-size: 24px;">LÍNGUAS</h1>
+      </div>
+      <div id="habildiadesContainer" style="display: flex; flex-direction: row; font-size: 19px;">
+        <div style="margin-left: 25px;">
+          <p>. PORTUGUES </p>
+          <p>. INGLÊS</p>
+          <p>. Espanhol</p>
+        </div>
+        <div style="margin-left: 35px;">
+          <p>-</p>
+          <p></p>-</p>
+          <p>-</p>
+        </div>
+        <div style="margin-left: 35px;">
+          <p>NATIVA</p>
+          <p>MÉDIO</p>
+          <p>MÉDIO</p>
+        </div>
+      </div>
+    </div>
+    <div id="direita" style="width: 50%;">
+      <div style="margin-left: 54px; width: 250px;">
+        <h1 style="display: flex; border-bottom: 1px solid black; font-size: 24px; margin-top: 55px;">RESUMO</h1>
+      </div>
+      <div style="font-size: 20px; margin-left: 15px; margin-top: 35px;">
+        <p id="sobre2">Lucas, amante da tecnologia e apaixonado por desafios. Com um espírito inovador, ele busca
+          constantemente
+          aprender e evoluir. Seu entusiasmo pela vida reflete-se em sua abordagem positiva. Geek nas horas vagas,
+          aprecia games e filmes sci-fi. Com uma mente criativa.
+
+        </p>
+      </div>
+      <div style="margin-left: 54px; width: 250px;">
+        <h1 style="display: flex; border-bottom: 1px solid black; font-size: 24px; margin-top: 55px;">FORMAÇÃO
+        </h1>
+      </div>
+      <div style="margin-left: 25px; border-left: 1px solid black;">
+        <div style="font-size: 16px; margin-left: 10px;">
+          <ul style="font-size: 18px;">
+            <li>Ensino Médio</li>
+          </ul>
+        </div>
+        <div style="font-size: 17px; margin-left: 20px;">
+          <p>Central do Brasil , Rio de Janeiro
+
+          </p>
+        </div>
+      </div>
+      <div style="margin-left: 54px; width: 250px;">
+        <h1 style="display: flex; border-bottom: 1px solid black; font-size: 24px; margin-top: 55px;">EXPERIÊNCIA
+        </h1>
+      </div>
+      <div style="margin-left: 25px; border-left: 1px solid black;">
+        <div style="font-size: 16px; margin-left: 10px;">
+          <ul>
+            <li style="font-size: 18px;">
+              Freelancer , Front-END
+            </li>
+          </ul>
+        </div>
+        <div style="font-size: 17px; margin-left: 5px;">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

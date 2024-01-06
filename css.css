@@ -1,0 +1,45 @@
+body input {
+  outline: 0;
+}
+
+/* div.endereco input {
+} */
+
+.picture {
+  width: 250px;
+  height: 180px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.picture_input {
+  display: none;
+}
+
+.picture:hover {
+  color: black;
+  background-color: #ccc;
+}
+.picture:active {
+  background-color: black;
+}
+
+.fotinha {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border: white;
+}
